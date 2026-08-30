@@ -23,8 +23,8 @@
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=xzh767&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=transparent" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xzh767&layout=compact&langs_count=8&hide_border=true&theme=transparent" />
+<img height="180" src="./profile/stats.svg" alt="GitHub Stats" />
+<img height="180" src="./profile/top-langs.svg" alt="Most Used Languages" />
 
 </div>
 
@@ -32,7 +32,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/xzh767/xzh767/main/assets/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
+<img src="./assets/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
 
 </div>
 
