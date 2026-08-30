@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Xzh767 👋
+# Hi, I'm xzh767 👋
 
 **A developer who enjoys web development, open-source projects, self-hosting and experimenting with new technology.**
 
@@ -17,7 +17,7 @@
 
 ## 🛠️ Things I like
 
-`JavaScript` `TypeScript` `PHP` `HTML/CSS` `Node.js` `GitHub Actions` `Cloudflare` `Docker`
+`JavaScript` `TypeScript` `PHP` `HTML/CSS` `Node.js` `GitHub Actions` `Cloudflare` `Docker` `CPP` `C`
 
 ## 📊 GitHub Stats
 
