@@ -2,7 +2,7 @@
 
 # Hi, I'm xzh767 👋
 
-**A developer who enjoys web development, open-source projects, self-hosting and experimenting with new technology.**
+**A student developer interested in web development, open-source projects, self-hosting and Internet infrastructure.**
 
 [![GitHub](https://img.shields.io/badge/GitHub-xzh767-181717?style=flat-square&logo=github)](https://github.com/xzh767)
 [![Repositories](https://img.shields.io/badge/Projects-open%20source-blue?style=flat-square)](https://github.com/xzh767?tab=repositories)
@@ -11,20 +11,20 @@
 
 ## 🚀 What I'm working on
 
-- 🎬 **[MoonTV](https://github.com/xzh767/MoonTV)** — a web-based video experience and downloader project
-- 🎵 **[lxmusic-web-shell](https://github.com/xzh767/lxmusic-web-shell)** — a lightweight web frontend for LX Music-compatible search, playback and resolver backends
+- 🎵 **[lxmusic-web-shell](https://github.com/xzh767/lxmusic-web-shell)** — a web frontend project exploring APIs, frontend development and deployment workflows
 - ☁️ Exploring **Cloudflare, GitHub Actions, serverless deployment, APIs and self-hosting**
+- 🖥️ Learning **Linux administration, Docker and real-world web infrastructure** through practical projects
 
 ## 🛠️ Things I like
 
-`JavaScript` `TypeScript` `PHP` `HTML/CSS` `Node.js` `GitHub Actions` `Cloudflare` `Docker` `CPP` `C`
+`JavaScript` `TypeScript` `PHP` `HTML/CSS` `Node.js` `GitHub Actions` `Cloudflare` `Docker` `Linux`
 
 ## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="180" src="./profile/stats.svg" alt="GitHub Stats" />
-<img height="180" src="./profile/top-langs.svg" alt="Most Used Languages" />
+<img src="https://github-readme-stats.vercel.app/api?username=xzh767&show_icons=true&hide_border=true&count_private=true" height="180" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xzh767&layout=compact&hide_border=true" height="180" />
 
 </div>
 
@@ -32,7 +32,7 @@
 
 <div align="center">
 
-<img src="./assets/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
+<img src="https://raw.githubusercontent.com/xzh767/xzh767/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
 
 </div>
 
