@@ -23,8 +23,8 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=xzh767&show_icons=true&hide_border=true&count_private=true" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=xzh767&layout=compact&hide_border=true" height="180" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xzh767" height="180" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xzh767" height="180" />
 
 </div>
 
