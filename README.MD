@@ -32,7 +32,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/xzh767/xzh767/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
+<img src="./assets/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
 
 </div>
 

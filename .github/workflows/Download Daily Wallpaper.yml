@@ -5,39 +5,43 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
-      - name: Set up Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-   
-      - name: Download Unslpash daily image
+      - name: Download Bing daily wallpaper
         run: |
-          npm i -g unsplash-wallpaper
-          cd ./assets/
-          unsplash-wallpaper --featured --search wallpapers --daily --width 4096 --height 2160
-          mv -fv wallpaper-photo*.jpg unsplash_wallpaper_4k.jpg
-          unsplash-wallpaper --featured --search wallpapers --daily --width 1920 --height 1080
-          mv -fv wallpaper-photo*.jpg unsplash_wallpaper_1080p.jpg
-          
-      - name: Download Bing wallpaper
+          cd assets
+          base=$(curl -sf "https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1" | jq -r '.images[0].urlbase')
+          echo "Bing urlbase: ${base}"
+          curl -sfL "https://cn.bing.com${base}_UHD.jpg" -o bing_wallpaper_4k.jpg
+          curl -sfL "https://cn.bing.com${base}_1920x1080.jpg" -o bing_wallpaper_1080p.jpg
+
+      - name: Download random wallpapers
         run: |
-          cd ./assets/
-          curl "https://bing.ioliu.cn/v1/rand?w=4096&h=2160" -o "bing_wallpaper_4k.jpg"
-          curl "https://bing.ioliu.cn/v1/rand?w=1920&h=1080" -o "bing_wallpaper_1080p.jpg"
-          
-      - name: Push to GitHub
-        uses: EndBug/add-and-commit@v7
+          cd assets
+          curl -sfL "https://picsum.photos/4096/2160" -o unsplash_wallpaper_4k.jpg
+          curl -sfL "https://picsum.photos/1920/1080" -o unsplash_wallpaper_1080p.jpg
+
+      - name: Validate downloads
+        run: |
+          cd assets
+          for f in bing_wallpaper_4k.jpg bing_wallpaper_1080p.jpg unsplash_wallpaper_4k.jpg unsplash_wallpaper_1080p.jpg; do
+            if [ ! -s "$f" ]; then echo "::error::$f is empty"; exit 1; fi
+            echo "$f: $(stat -c%s "$f") bytes"
+          done
+
+      - name: Commit wallpapers
+        uses: EndBug/add-and-commit@v9
         with:
-          branch: main
-          message: 'Download Daily Wallpaper'
+          add: "assets/*.jpg"
+          message: 'chore: update daily wallpapers'
+          default_author: github_actions

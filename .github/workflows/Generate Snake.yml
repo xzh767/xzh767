@@ -6,6 +6,7 @@ on:
       - "profile/*.svg"
       - "assets/github-contribution-grid-snake.svg"
       - "assets/github-contribution-grid-snake.gif"
+      - "assets/*.jpg"
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
